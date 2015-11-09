@@ -13,7 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.2/angular.min.js"></script>
 
     <!-- Add ui-router library here -->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
     <!-- Custom code -->
     <script src="js/app.js"></script>
     <link href = "css/app.css" rel="stylesheet" type = "text/css"/>
@@ -24,10 +25,10 @@
       <header>
 
         <!-- Create links to different sections -->
-          <h1>This is the header -- it'll stick around</h1>        
-          <a class="btn btn-default">Home</a>
-          <a class="btn btn-default">Content</a>
-          <a class="btn btn-default">About</a>
+          <h1>This is the header—it'll stick around</h1>        
+          <a ui-sref="home" class="btn btn-default">Home</a>
+          <a ui-sref="content" class="btn btn-default">Content</a>
+          <a ui-sref="about" class="btn btn-default">About</a>
   		</header>
         
 
@@ -37,7 +38,7 @@
       </div>
 
       <footer>
-          <h2>(This is the footer -- it'll stick around too)</h2>
+          <h2>(This is the footer—it'll stick around too)</h2>
       </footer>
     </div>
   </body>
